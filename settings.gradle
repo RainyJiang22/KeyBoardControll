@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url "https://dl.bintray.com/rockscy94/maven/" }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +11,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://dl.bintray.com/rockscy94/maven/" }
     }
 }
 rootProject.name = "KeyBoardControll"
