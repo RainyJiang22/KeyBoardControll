@@ -3,6 +3,7 @@ package com.base.keyboardcontroll
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.view.WindowCompat
 import com.base.keyboardcontroller.listener.KeyboardListener
 import com.base.keycontroll.KeyBoardControll
 import com.base.keycontroll.keyboardcontroller.SystemUiControll
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        SystemUiControll.instance.showOrHideKeyBoard(edt)
         SystemUiControll.instance.showOrHideKeyBoard(edt)
         SystemUiControll.instance.setKeyBoardListener(object : KeyboardListener {
             override fun onKeyBoardAnimStart() {
